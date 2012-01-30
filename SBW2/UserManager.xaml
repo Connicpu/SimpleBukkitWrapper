@@ -1,0 +1,15 @@
+﻿<Window x:Class="SBW2.UserManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserManager" Height="388" Width="609"
+        Visibility="Visible" Closing="WindowClosing" Loaded="Window_Loaded" Background="{x:Null}">
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Name="dataGrid1" Margin="10,10,10,10" Background="#00000000" BorderBrush="#00000000" LoadingRow="dataGrid1_LoadingRow">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Add User" Click="MenuItem_Click" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Window>

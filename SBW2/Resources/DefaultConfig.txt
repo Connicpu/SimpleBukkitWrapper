@@ -1,0 +1,6 @@
+maxheap=1024M
+minheap=512M
+incgc=false
+jarpath=%ad%\craftbukkit.jar
+cburi=http://ci.bukkit.org/job/dev-CraftBukkit/Recommended/artifact/*zip*/archive.zip
+certificate=NO_CERT

@@ -1,0 +1,5 @@
+C:\Users\Administrator\Dropbox\CSharp\Projects\SBW2\SBWAPI\bin\Debug\SBWAPI.dll
+C:\Users\Administrator\Dropbox\CSharp\Projects\SBW2\SBWAPI\bin\Debug\SBWAPI.pdb
+C:\Users\Administrator\Dropbox\CSharp\Projects\SBW2\SBWAPI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Dropbox\CSharp\Projects\SBW2\SBWAPI\obj\Debug\SBWAPI.dll
+C:\Users\Administrator\Dropbox\CSharp\Projects\SBW2\SBWAPI\obj\Debug\SBWAPI.pdb

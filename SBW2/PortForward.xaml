@@ -1,0 +1,21 @@
+﻿<Window x:Class="SBW2.PortForward"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Port Forward" Height="421" Width="541" Loaded="WindowLoaded"
+        WindowStartupLocation="CenterOwner" Visibility="Hidden"
+        MinWidth="300" MinHeight="300">
+    <Grid>
+        <ListView Margin="10,10,10,150" Name="UpnpList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Description" />
+                    <GridViewColumn Header="Inner Port" />
+                    <GridViewColumn Header="Outer Port" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Margin="10,0,10,10" Height="130" VerticalAlignment="Bottom">
+            
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,157 @@
+﻿<!-- Microsoft Public License (Ms-PL)
+ * 
+ *  1.Definitions
+ *      The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same
+ *      meaning here as under U.S. copyright law.
+ *      A "contribution" is the original software, or any additions or changes to the software.
+ *      A "contributor" is any person that distributes its contribution under this license.
+ *      "Licensed patents" are a contributor's patent claims that read directly on its contribution.
+
+ * 2.Grant of Rights
+ *  (A) Copyright Grant- Subject to the terms of this license, including the license conditions
+ *      and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free
+ *      copyright license to reproduce its contribution, prepare derivative works of its contribution,
+ *      and distribute its contribution or any derivative works that you create.
+ *  (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations
+ *      in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its
+ *      licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its
+ *      contribution in the software or derivative works of the contribution in the software.
+
+ * 3.Conditions and Limitations
+ *  (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
+ *  (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software,
+ *      your patent license from such contributor to the software ends automatically.
+ *  (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution
+ *      notices that are present in the software.
+ *  (D) If you distribute any portion of the software in source code form, you may do so only under this license by
+ *      including a complete copy of this license with your distribution. If you distribute any portion of the software
+ *      in compiled or object code form, you may only do so under a license that complies with this license.
+ *  (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties,
+ *      guarantees, or conditions. You may have additional consumer rights under your local laws which this license
+ *      cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties
+ *      of merchantability, fitness for a particular purpose and non-infringement.  -->
+    
+<rib:RibbonWindow x:Class="SBW2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:rib="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon"
+        xmlns:local="clr-namespace:SBW2"
+        Title="Simple Bukkit Wrapper" Height="448" Width="634"
+        Icon="/Images/bukkit_logo.png" Closing="RibbonWindowClosing">
+    
+    <DockPanel>
+        <rib:Ribbon DockPanel.Dock="Top" MinWidth="0">
+            
+            <rib:Ribbon.QuickAccessToolBar>
+                <rib:RibbonQuickAccessToolBar>
+                    <rib:RibbonButton x:Name="StartStopQAB" SmallImageSource="/Images/start.png" />
+                </rib:RibbonQuickAccessToolBar>
+            </rib:Ribbon.QuickAccessToolBar>
+            
+            <rib:Ribbon.ApplicationMenu>
+                <rib:RibbonApplicationMenu SmallImageSource="/Images/bukkit_logo.png" Label="File" KeyTip="M" >
+                    <rib:RibbonApplicationMenuItem Header="Panic">
+                        <rib:RibbonApplicationMenuItem.Items>
+                            <rib:RibbonApplicationMenuItem Header="Kill the server!"
+                                                           Command="{x:Static local:Commands.KillServer}"/>
+                        </rib:RibbonApplicationMenuItem.Items>
+                    </rib:RibbonApplicationMenuItem>
+                    
+                    <rib:RibbonApplicationMenuItem KeyTip="H" Header="Hide Window"
+                                                   Command="{x:Static local:Commands.HideWindow}" />
+                    <rib:RibbonSeparator />
+                    <rib:RibbonApplicationMenuItem KeyTip="Q" Header="Quit"
+                                                   Command="{x:Static local:Commands.Quit}" />
+                </rib:RibbonApplicationMenu>
+            </rib:Ribbon.ApplicationMenu>
+            
+            <rib:RibbonTab Header="Server" KeyTip="S">
+                <rib:RibbonGroup Header="Control">
+                    <rib:RibbonButton Label="Start" LargeImageSource="/Images/start.png"
+                                      Command="{x:Static local:Commands.StartServer}"
+                                      x:Name="StartRB" KeyTip="T" x:FieldModifier="private" />
+                    <rib:RibbonButton Label="Stop" LargeImageSource="/Images/stop.png"
+                                      Command="{x:Static local:Commands.StopServer}"
+                                      x:Name="StopRB" IsEnabled="False" KeyTip="P" />
+                    <rib:RibbonButton Label="Restart" LargeImageSource="/Images/restart.png"
+                                      Command="{x:Static local:Commands.RestartServer}"
+                                      x:Name="RestartRB" IsEnabled="False" KeyTip="R" />
+                </rib:RibbonGroup>
+                <rib:RibbonGroup Width="60" Header="Status">
+                    <rib:RibbonTwoLineText x:Name="Ribbon_Status" x:FieldModifier="private" />
+                </rib:RibbonGroup>
+                <rib:RibbonGroup Width="150" Header="Java Status">
+                    <rib:RibbonTwoLineText x:Name="MemStats" x:FieldModifier="private" />
+                    <rib:RibbonTwoLineText x:Name="Uptime" x:FieldModifier="private" />
+                </rib:RibbonGroup>
+                <rib:RibbonGroup Header="Craftbukkit">
+                    <rib:RibbonButton Label="Clear Console" KeyTip="C"
+                                      Command="{x:Static local:Commands.ClearConsole}"/>
+                    <rib:RibbonButton Label="Update Craftbukkit" KeyTip="U"
+                                      Command="{x:Static local:Commands.UpdateCraftbukkit}"/>
+                    <rib:RibbonButton Label="Insert Color code" KeyTip="I"
+                                      Command="{x:Static local:Commands.AddSectionSign}"/>
+                </rib:RibbonGroup>
+            </rib:RibbonTab>
+            <rib:RibbonTab Header="Settings" KeyTip="O">
+                <rib:RibbonGroup>
+                    <rib:RibbonButton Label="Save" LargeImageSource="/Images/save.png"
+                                      Command="{x:Static local:Commands.SaveConfig}"/>
+                </rib:RibbonGroup>
+                <rib:RibbonGroup Header="Java Options">
+                    <rib:RibbonComboBox Label="Memory" Name="memcb">
+                        <rib:RibbonGallery SelectionChanged="MemoryComboBoxSelectionChanged"
+                                           SelectedItem="1024M" x:Name="memboxGal" x:FieldModifier="private">
+                            <rib:RibbonGalleryCategory  x:Name="MemoryComboBox" x:FieldModifier="private" />
+                        </rib:RibbonGallery>
+                    </rib:RibbonComboBox>
+                    <rib:RibbonToggleButton Label="Incremental Garbage Collection" />
+                </rib:RibbonGroup>
+            </rib:RibbonTab>
+            <rib:RibbonTab Header="Networking">
+                <!--<rib:RibbonGroup Header="Port Forwarding">
+                    <rib:RibbonButton Label="Port Forwarding" LargeImageSource="/Images/right_arrow.png"
+                                      Command="{x:Static local:Commands.ShowPortForward}" />
+                </rib:RibbonGroup>-->
+                <rib:RibbonGroup>
+                    <rib:RibbonToggleButton Label="Enable Networking" LargeImageSource="/Images/networking.png"
+                                            Checked="NetToggleChecked" Name="NetworkToggle"
+                                            x:FieldModifier="private" Unchecked="NetworkToggleUnchecked" />
+                </rib:RibbonGroup>
+                <rib:RibbonGroup>
+                    <rib:RibbonButton Label="Manage Users" Command="{x:Static local:Commands.ShowUserManager}" />
+                </rib:RibbonGroup>
+            </rib:RibbonTab>
+        </rib:Ribbon>
+        <Grid>
+            <RichTextBox x:FieldModifier="public" x:Name="outputBox" DockPanel.Dock="Top"
+                         IsReadOnly="True" Margin="0,0,0,21" VerticalScrollBarVisibility="Visible"
+                         UndoLimit="0" FontFamily="Courier New" FontSize="12">
+                <RichTextBox.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FFF0F0F0" Offset="1" />
+                        <GradientStop Color="Transparent" Offset="0.564" />
+                    </LinearGradientBrush>
+                </RichTextBox.Background>
+            </RichTextBox>
+            <TextBox x:Name="inputBox" DockPanel.Dock="Bottom" Height="21"
+                     VerticalAlignment="Bottom" KeyDown="TextBoxKeyDown" />
+        </Grid>
+    </DockPanel>
+    
+
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo Description="Control your minecraft server" ThumbnailClipMargin="5">
+            <TaskbarItemInfo.ThumbButtonInfos>
+                <ThumbButtonInfoCollection>
+                    <ThumbButtonInfo x:Name="StartThumb" Command="{x:Static local:Commands.StartServer}"
+                                     ImageSource="/Images/start.png" x:FieldModifier="private" />
+                    <ThumbButtonInfo x:Name="StopThumb" Command="{x:Static local:Commands.StopServer}"
+                                     ImageSource="/Images/stop.png" IsEnabled="False" />
+                    <ThumbButtonInfo x:Name="RestartThumb" Command="{x:Static local:Commands.RestartServer}"
+                                     ImageSource="/Images/restart.png" IsEnabled="False" />
+                </ThumbButtonInfoCollection>
+            </TaskbarItemInfo.ThumbButtonInfos>
+        </TaskbarItemInfo>
+    </Window.TaskbarItemInfo>
+</rib:RibbonWindow>

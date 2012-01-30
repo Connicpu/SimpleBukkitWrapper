@@ -1,0 +1,59 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="6879F80E-D924-495E-9ECC-E2056A9279E2/f:MainWindow.xaml" caret="773" fromTop="0" />
+    <File id="6879F80E-D924-495E-9ECC-E2056A9279E2/f:MainWindow.xaml.cs" caret="0" fromTop="0" />
+    <File id="A6C57ADD-5DAA-4997-BFA9-017A03D5555E/f:IPlugin.cs" caret="148" fromTop="8" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Resources/f:DefaultConfig.txt" caret="178" fromTop="5" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:App.xaml" caret="0" fromTop="0" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:DLWindow.cs" caret="4863" fromTop="23" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:MainWindow.xaml" caret="8453" fromTop="33" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:UserCollection.cs" caret="1610" fromTop="15" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:NewRemoteUser.xaml" caret="743" fromTop="11" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:PortForward.xaml.cs" caret="370" fromTop="15" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:NewRemoteUser.xaml.cs" caret="1908" fromTop="23" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:UserManager.xaml" caret="504" fromTop="6" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:UserManager.xaml.cs" caret="555" fromTop="19" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:Config.cs" caret="2840" fromTop="6" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:ServerHandler/f:ProcessHandler.cs" caret="10710" fromTop="18" />
+    <File id="A6C57ADD-5DAA-4997-BFA9-017A03D5555E/f:PluginManager.cs" caret="775" fromTop="24" />
+    <File id="A6C57ADD-5DAA-4997-BFA9-017A03D5555E/f:Plugin.cs" caret="1147" fromTop="14" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="2093" fromTop="37" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:Commands.cs" caret="8117" fromTop="20" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:CommandHandlers.cs" caret="5255" fromTop="22" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:MainWindow.xaml.cs" caret="16500" fromTop="235" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="5442" fromTop="40" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Listener.cs" caret="5596" fromTop="76" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4184" fromTop="18" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4184" fromTop="17" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4184" fromTop="23" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4184" fromTop="27" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="2466" fromTop="6" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="393" fromTop="16" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="1736" fromTop="13" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="681" fromTop="24" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="5397" fromTop="18" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="810" fromTop="11" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4089" fromTop="19" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="2404" fromTop="30" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="1017" fromTop="12" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="1663" fromTop="10" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="2530" fromTop="16" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="520" fromTop="13" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="718" fromTop="17" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="1161" fromTop="18" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="1604" fromTop="10" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:AuthProvider.cs" caret="2093" fromTop="22" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="1729" fromTop="4" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="3832" fromTop="20" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="2360" fromTop="15" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:CommandHandlers.cs" caret="4023" fromTop="19" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:Commands.cs" caret="4276" fromTop="17" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:Commands.cs" caret="3450" fromTop="10" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/f:Commands.cs" caret="2692" fromTop="14" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Listener.cs" caret="732" fromTop="22" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="4945" fromTop="22" />
+    <File id="452FCBE9-B28E-4A67-96BF-E596B77BDF9D/d:Net/f:Client.cs" caret="5442" fromTop="40" />
+  </RecentEdits>
+</RecentFiles>
